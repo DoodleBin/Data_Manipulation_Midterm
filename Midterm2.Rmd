@@ -11,3 +11,50 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+member <- read.csv("https://collinn.github.io/data/member.csv")
+claims <- read.csv("https://collinn.github.io/data/claims.csv")
+```
+
+Plans of attack (:<
+
+## Task 1
+
+restrict to women who has greater than 18 and younger than 41
+
+group by ID in member to see when women were insured
+
+identify month she was delivered in and ensure she was insured in that time frame
+
+## Task 2
+
+Pivot wider to separate all the codes out
+mutate the ICD to say what each code stands for
+pivot maybe?
+
+GGplots that investigate relationship between the outcome (opioid prescription) and explanatory values (delivery date and type, mental health disorder and migraine headache)
+
+## Task 3
+
+statistical model where the outcome is an opioid prescription 
+- clustering data
+
+## Task 4
+
+report findings - summarize
+
+Inclusion Criteria (20 pts)
+– Age criteria
+– Coverage criteria
+
+Variable creation (40 points)
+– Age at delivery
+– delivery type
+– opioid prescription status
+– Migraine status
+– Insurance type
+– Mental Health diagnosis
+
+
+
+
